@@ -12,22 +12,23 @@ int main()
     cout<<"\n**********************************************************"<<endl;
     
 	cout << "Enter Your username: ";
-    cin >> user;
+        cin >> user;
     
 	if (user == username)
 	{
-        cout << "Enter password: " << endl;
-        cin >> pass;
-        if (pass == password)
+	        cout << "Enter password: " << endl;
+	        cin >> pass;
+	        if (pass == password)
+		 {
+	                 cout << "Successful Login!" << endl;
+	         }
+	        else
 		{
-            cout << "Successful Login!" << endl;
-        }
-        else {
-            cout << "Incorrect Password!" << endl;
-        }
-    }
-    else 
-	{
-        cout << "Incorrect Username!" << endl;
+                  cout << "Incorrect Password!" << endl;
+                }
      }
+    else 
+	  {
+            cout << "Incorrect Username!" << endl;
+          }
 }
